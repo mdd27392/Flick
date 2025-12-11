@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flick</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Flick is a tiny reaction mini app where a circle appears randomly and you must tap it fast. Track fastest tap and longest streak for today.">
+
+<meta property="og:title" content="Flick">
+<meta property="og:description" content="Flick is a tiny reaction mini app where a circle appears randomly and you must tap it fast. Track fastest tap and longest streak for today.">
+<meta property="og:image" content="https://flick-mini.vercel.app/assets/hero.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://flick-mini.vercel.app/">
+
+<meta name="fc:miniapp" content='{"version":"1","name":"Flick","iconUrl":"https://flick-mini.vercel.app/assets/icon.png","imageUrl":"https://flick-mini.vercel.app/assets/embed-3x2.png","button":{"title":"Open Flick","action":{"type":"launch_frame","url":"https://flick-mini.vercel.app/"}},"splashImageUrl":"https://flick-mini.vercel.app/assets/splash.png","splashBackgroundColor":"#020617"}'>
+<meta property="fc:frame" content='{"version":"vNext","imageUrl":"https://flick-mini.vercel.app/assets/embed-3x2.png","button":{"title":"Open Flick","action":{"type":"launch_frame","url":"https://flick-mini.vercel.app/"}},"splashImageUrl":"https://flick-mini.vercel.app/assets/splash.png","splashBackgroundColor":"#020617"}'>
+<meta name="theme-color" content="#020617">
+
+<style>
+body { margin:0; font-family:system-ui; background:#020617; color:white; display:flex; flex-direction:column; align-items:center; }
+h1 { margin-top:20px; font-size:1.7rem; }
+#environment-indicator { font-size:0.8rem; margin-top:6px; color:#94a3b8; }
+#game-area {
+  position:relative; width:100%; max-width:420px; height:420px;
+  background:#0f172a; border-radius:20px; margin-top:20px; overflow:hidden;
+}
+#target {
+  position:absolute; width:60px; height:60px; border-radius:50%;
+  background:#3b82f6; display:none;
+}
+.stats { margin-top:18px; font-size:1rem; }
+button { margin-top:18px; padding:10px 18px; background:#3b82f6; color:white; border:none; border-radius:12px; font-size:1rem; }
+</style>
+</head>
+
+<body>
+<h1>Flick</h1>
+<div id="environment-indicator">Detecting environment…</div>
+
+<div id="game-area">
+  <div id="target"></div>
+</div>
+
+<div class="stats">
+  Fastest: <span id="fastest">--</span> ms · Streak: <span id="streak">0</span>
+</div>
+
+<button id="start-btn">Start</button>
+
+<script type="module" src="./script.js"></script>
+</body>
+</html>
