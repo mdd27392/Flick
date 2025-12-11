@@ -1,0 +1,31 @@
+{
+  "accountAssociation": {
+    "header": "TODO_REPLACE_BASE64_HEADER",
+    "payload": "TODO_REPLACE_BASE64_PAYLOAD",
+    "signature": "TODO_REPLACE_BASE64_SIGNATURE"
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "Flick",
+    "homeUrl": "https://flick-mini.vercel.app/",
+    "iconUrl": "https://flick-mini.vercel.app/assets/icon.png",
+    "splashImageUrl": "https://flick-mini.vercel.app/assets/splash.png",
+    "splashBackgroundColor": "#020617",
+    "subtitle": "Test your quick tap",
+    "description": "Flick is a tiny reaction mini app where a circle appears randomly and you must tap it fast. Track fastest tap and longest streak for today.",
+    "primaryCategory": "games",
+    "tags": [
+      "fun",
+      "simple",
+      "utility"
+    ],
+    "heroImageUrl": "https://flick-mini.vercel.app/assets/hero.png",
+    "ogTitle": "Flick",
+    "ogDescription": "Flick is a tiny reaction mini app where a circle appears randomly and you must tap it fast. Track fastest tap and longest streak for today.",
+    "ogImageUrl": "https://flick-mini.vercel.app/assets/hero.png",
+    "screenshotUrls": [
+      "https://flick-mini.vercel.app/assets/hero.png"
+    ],
+    "noindex": true
+  }
+}
